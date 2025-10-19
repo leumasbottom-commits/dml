@@ -6,12 +6,17 @@
 }
 
 :root {
-  --background: #373737;
+  --background: #373737dd;
   --foreground: #ffffff;
 }
 
+html {
+  background-image: url("./assets/background.jpeg");
+  background-size: cover;
+}
+
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   font-size: 1.5rem;
 }

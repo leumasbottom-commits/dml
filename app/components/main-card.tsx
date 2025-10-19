@@ -1,9 +1,9 @@
 'use client'
 
-import firstImage from "../assets/images.jpeg";
-import secondImage from "../assets/download.jpeg";
-import thirdImage from "../assets/download.png";
-import fourthImage from "../assets/images.png";
+import firstImage from "../assets/1.jpeg";
+import secondImage from "../assets/2.jpeg";
+import thirdImage from "../assets/3.jpeg";
+import fourthImage from "../assets/4.jpg";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 

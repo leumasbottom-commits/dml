@@ -1,17 +1,17 @@
+// next.config.mjs
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Add this line to enable static exports
+  // Gera uma pasta 'out' com o site estático
   output: 'export',
 
-  // Optional: Change the build output directory (defaults to 'out')
-  // distDir: 'build',
-
-  // Note: If you are using next/image, you may need to configure a loader
-  // for static exports. For example, to use a third-party loader:
-  // images: {
-  //   loader: 'custom',
-  //   loaderFile: './my-loader.ts',
-  // },
+  // IMPORTANTE: Altere 'nome-do-repo' para o nome do seu repositório no GitHub
+  basePath: '/dml',
+  
+  // Opcional: Desativa a otimização de imagens que depende de um servidor
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
