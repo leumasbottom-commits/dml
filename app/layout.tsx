@@ -1,10 +1,24 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+// 1. Carrega a fonte local
+const blackville = localFont({
+  src: './fonts/blackville.ttf', // Caminho para o arquivo da fonte
+  display: 'swap', // Estratégia de exibição da fonte
+  variable: '--font-blackville', // Opcional: cria uma variável CSS para uso fácil
+});
+
+const mirage = localFont({
+  src: './fonts/mirage-final.ttf', // Caminho para o arquivo da fonte
+  display: 'swap', // Estratégia de exibição da fonte
+  variable: '--font-mirage', // Opcional: cria uma variável CSS para uso fácil
 });
 
 const geistMono = Geist_Mono({
@@ -25,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${blackville.variable} ${mirage.variable} antialiased`}
       >
         {children}
       </body>
