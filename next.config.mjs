@@ -6,7 +6,7 @@ const nextConfig = {
   output: 'export',
 
   // IMPORTANTE: Altere 'nome-do-repo' para o nome do seu repositório no GitHub
-  basePath: '/dml',
+  // basePath: '/dml',
   
   // Opcional: Desativa a otimização de imagens que depende de um servidor
   images: {

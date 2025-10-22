@@ -1,4 +1,15 @@
+'use client'
+
 import MainCard from "./main-card";
+import firstImage from "../assets/1.jpeg";
+import secondImage from "../assets/2.jpeg";
+import thirdImage from "../assets/3.jpeg";
+import fourthImage from "../assets/4.jpg";
+
+import firstRoleta from "../assets/roleta1.png";
+import secondRoleta from "../assets/roleta2.png";
+import thirdRoleta from "../assets/roleta3.png";
+import fourthRoleta from "../assets/roleta4.png";
 
 const Content = () => {
   return (
@@ -24,7 +35,11 @@ const Content = () => {
       </div>
 
       <main className="flex p-4">
-        <MainCard />
+        <MainCard click={() => alert('teste')} images={[firstImage, secondImage, thirdImage, fourthImage]} baseId="packs" title="Packs" />
+      </main>
+
+      <main className="flex p-4">
+        <MainCard click={() => alert('teste')} images={[firstRoleta, secondRoleta, thirdRoleta, fourthRoleta]} baseId="roletas" title="Roletas" />
       </main>
     </div>
   );

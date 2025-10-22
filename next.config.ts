@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  assetPrefix: '/dml',
-  basePath: '/dml',
+  // assetPrefix: '/dml',
+  // basePath: '/dml',
   images: {
     unoptimized: true,
   },
